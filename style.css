@@ -18,9 +18,6 @@
         font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto,"Helvetica Neue", Arial;
         background: linear-gradient(180deg, #070708 0%, var(--bg) 100%);
         color:  white;
-        -webkit-font-smoothing:antialiased;
-        -maz-osx-font-smoothing:grayscale;
-        line-height:1.45;
     }
     a{
         color: inherit;
@@ -58,7 +55,8 @@
         transition: all .26s ease;
     }
     .nav a:hover{
-        transform:scale(1.1);box-shadow:0 4px 60px rgba(68, 66, 70, 0.452)
+        transform:scale(1.1);
+        box-shadow:0 4px 60px rgba(68, 66, 70, 0.452)
     }
     .cta{
         background: linear-gradient(90deg,var(--accent),var(--accent-2));
@@ -71,7 +69,8 @@
         transition:all .28s ease;
     }
     .cta:hover{
-        transform:scale(1.1);box-shadow:0 4px 60px rgba(182, 37, 255, 0.452)
+        transform:scale(1.1);
+        box-shadow:0 4px 60px rgba(182, 37, 255, 0.452)
     }
 
     .hero{
@@ -81,7 +80,6 @@
         padding: 64px 0 36px;
     }
     .hero-left{
-        flex: 1;
         max-width: 620px;
     }
     .kicker{
@@ -90,7 +88,6 @@
         border-radius: 999px;
         background: rgba(255, 255, 255, 0.03);
         font-weight: 700;
-        color: var(--muted);
         margin-bottom: 16px;
     }
     .hero h1{
@@ -161,12 +158,27 @@
     }
     .card{
       background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      border-radius:16px;padding:20px;border:1px solid rgba(255,255,255,0.03);
-      min-height:120px;display:flex;flex-direction:column;gap:10px;justify-content:flex-start;
+      border-radius:16px;
+      padding:20px;
+      border:1px solid rgba(255,255,255,0.03);
+      min-height:120px;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      justify-content:flex-start;
       transition:all .28s ease;
     }
     .card:hover{transform:translateY(-12px);box-shadow:0 20px 60px rgba(184,37,255,0.06)}
-    .icon{font-size:20px;display:inline-block;padding:8px;border-radius:10px;background:rgba(255,255,255,0.02);width:44px;height:44px;text-align:center;line-height:28px}
+    .icon{font-size:20px;
+        display:inline-block;
+        padding:8px;
+        border-radius:10px;
+        background:rgba(255,255,255,0.02);
+        width:44px;
+        height:44px;
+        text-align:center;
+        line-height:28px;
+    }
 
     .products-row{
         display: grid;
@@ -209,8 +221,14 @@
     border: 1px solid rgba(255,255,255,0.04);
     box-shadow: 0 5px 30px rgba(77, 73, 73, 0.39);
 }
-.founder h3{font-size:20px;margin-top:4px}
-.founder p{color:var(--muted);font-size:14px}
+.founder h3{
+    font-size:20px;
+    margin-top:4px;
+}
+.founder p{
+    color:var(--muted);
+    font-size:14px;
+}
 
 .services{
     padding: 20px 0 42px;
