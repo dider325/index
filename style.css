@@ -330,7 +330,7 @@
         grid-template-columns: repeat(1,1fr);
     }
     .explore-btn a{
-        padding: 22px 80px;
+        padding: 22px 50px;
     }
 }
 @media (min-width:700px){
