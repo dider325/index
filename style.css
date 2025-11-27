@@ -258,7 +258,7 @@
     flex-wrap: wrap;
 }
 .explore-btn a{
-    padding: 22px;
+    padding: 22px 105px;
     border-radius: 50px;
     border: 1px solid rgba(104, 100, 100, 0.568);
     background: white;
@@ -275,23 +275,73 @@
 }
 .ex-btn{
     display: grid;
-    grid-template-columns: repeat(5,2fr);
+    grid-template-columns: repeat(4,2fr);
     text-align: center;
-    gap: 100px;
+    gap: 59px;
+    row-gap: 100px;
+    margin-bottom: 150px;
+    background: var(--card);
+    padding: 100px;
+    border-radius: 60px;
 }
 .explore-btn{
      transform: translatex(0);
         animation: floatbtn 6s ease-in-out infinite;
-    }
+}
+.web-ss{
+    margin: 100px auto;
+    width: 80%;
+    overflow-x: auto;
+    display: flex;
+    box-shadow: 0 5px 80px rgba(70, 69, 69, 0.432);
+}
+.ss-animation{
+    display: flex;
+    animation: spin 30s infinite linear;
+}
+.web-ss::-webkit-scrollbar{
+    display: none;
+}
+.ss img{
+    height: 500px;
+    padding: 20px;
+}
+.image-frame{
+    background: var(--card);
+    padding: 30px;
+    border-radius: 60px;
+    margin-bottom: 50px;
+}
+@keyframes spin{
+    from{translate: 0;}
+    to{translate: -100%;}
+}
 @keyframes floatbtn{
     0%, 100% {transform: translatex(0);}
         50%{transform: translatex(-30px);}
 }
-@media (max-width:1100px){
+@media (max-width:800px){
+    .ex-btn{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media (max-width:700px){
+    .ex-btn{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media (min-width:700px){
     .ex-btn{
         grid-template-columns: repeat(2,1fr);
     }
 }
+@media (min-width:1200px){
+    .ex-btn{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+
 @media (max-width:1100px){
       .grid{grid-template-columns:repeat(2,1fr)}
       .products{grid-template-columns:repeat(2,1fr)}
