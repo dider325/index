@@ -329,6 +329,9 @@
     .ex-btn{
         grid-template-columns: repeat(1,1fr);
     }
+    .explore-btn a{
+        padding: 22px 80px;
+    }
 }
 @media (min-width:700px){
     .ex-btn{
